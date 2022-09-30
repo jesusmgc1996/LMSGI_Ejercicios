@@ -20,7 +20,6 @@
 <!ELEMENT precio (#PCDATA)>
 <!ELEMENT importe (#PCDATA)>
 <!ATTLIST factura n_fac ID #REQUIRED>
-<!ATTLIST factura n_fac ID #REQUIRED>
 <!ATTLIST datos_factura n_ped ID #REQUIRED
                         iva NMTOKEN #REQUIRED
                         f_pago NMTOKEN #REQUIRED
