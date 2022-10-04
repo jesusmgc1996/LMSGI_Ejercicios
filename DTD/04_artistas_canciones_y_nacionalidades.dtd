@@ -7,7 +7,7 @@
 <!ELEMENT nacionalidad EMPTY>
 <!ATTLIST artista nombre NMTOKEN #REQUIRED
                     fechaNacimiento CDATA #REQUIRED
-                    nacionalidad NMTOKENS #REQUIRED
+                    nacionalidad IDREFS #REQUIRED
                     discografica NMTOKEN #IMPLIED>
 <!ATTLIST cancion nombre CDATA #REQUIRED
                     duracion NMTOKEN #REQUIRED
