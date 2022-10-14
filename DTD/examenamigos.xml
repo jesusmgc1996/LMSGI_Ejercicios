@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE amigos SYSTEM "examenamigos.dtd">
+<amigos>Lista de amigos
+	<amigo nombre="Pepe" localidad="lucena" amigode="Pablo Sonia" parejade="Laura" casado="si">
+		<apellido>Jiménez</apellido>
+		<independizado/>
+        <fechaCumpleanios>8 de mayo</fechaCumpleanios>
+    </amigo>
+    <amigo nombre="Pablo" localidad="malaga" amigode="Pepe Laura">
+		<apellido>Pérez</apellido>
+		<edad>27</edad>
+    </amigo>
+	<amiga nombre="Laura" localidad="cordoba" amigode="Pablo Sonia" parejade="Pepe" casado="si">
+		<apellido>García</apellido>
+		<independizado/>
+		<edad>26</edad>
+        <fechaCumpleanios>19 de octubre</fechaCumpleanios>
+    </amiga>
+    <amiga nombre="Sonia" localidad="cordoba" amigode="Laura">
+		<apellido>García</apellido>
+		<independizado/>
+		<edad>25</edad>
+    </amiga>
+</amigos>

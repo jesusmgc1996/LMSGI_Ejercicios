@@ -1,0 +1,14 @@
+<!ELEMENT amigos (#PCDATA | amigo | amiga)*>
+<!ELEMENT amigo (apellido, independizado?, (edad | fechaCumpleanios)+)>
+<!ELEMENT amiga (apellido, independizado?, (edad | fechaCumpleanios)+)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT independizado EMPTY>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT fechaCumpleanios (#PCDATA)>
+<!ENTITY % atributos "nombre ID #REQUIRED
+                        localidad (lucena | malaga | cordoba) 'lucena'
+                        amigode IDREFS #IMPLIED
+                        parejade IDREF #IMPLIED
+                        casado NMTOKEN #FIXED 'si'">
+<!ATTLIST amigo %atributos;>
+<!ATTLIST amiga %atributos;> 
