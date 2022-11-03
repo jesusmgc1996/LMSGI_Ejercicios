@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura" type="tipoFacturas" />
+    <xs:complexType name="tipoFacturas">
+        <xs:sequence>
+            <xs:element name="datos_empresa" type="tipoEmpresa" />
+            <xs:element name="datos_cliente" type="tipoCliente" />
+            <xs:element name="datos_factura" type="tipoFactura" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="n_fac" type="tipoId" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tipoEmpresa">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="poblacion" type="xs:string" />
+            <xs:element name="provincia" type="xs:string" />
+            <xs:element name="dir" type="xs:string" />
+            <xs:element name="cif" type="tipoCif" />
+            <xs:element name="telefono">
+                <xs:complexType />
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipoCif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]-\d{7}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="tipoCliente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="poblacion" type="xs:string" />
+            <xs:element name="provincia" type="xs:string" />
+            <xs:element name="dir_env" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="n_cli" type="tipoId" use="required" />
+    </xs:complexType>
+    <xs:simpleType name="tipoId">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]\d{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="tipoFactura">
+        <xs:sequence>
+            <xs:element name="fecha" type="tipoFecha" />
+            <xs:element name="linea" type="tipoLinea" maxOccurs="unbounded" />
+            <xs:element name="base" type="tipoImporte" />
+            <xs:element name="cuota_iva" type="tipoImporte" />
+            <xs:element name="total" type="tipoImporte" />
+        </xs:sequence>
+        <xs:attribute name="n_ped" type="tipoId" use="required" />
+        <xs:attribute name="iva" type="xs:positiveInteger" use="required" />
+        <xs:attribute name="f_pago" type="xs:string" use="required" />
+        <xs:attribute name="moneda" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:simpleType name="tipoFecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d?\d-\d?\d-\d{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="tipoLinea">
+        <xs:sequence>
+            <xs:element name="ref" type="xs:string" />
+            <xs:element name="desc" type="xs:string" />
+            <xs:element name="cant" type="xs:positiveInteger" />
+            <xs:element name="precio" type="tipoImporte" />
+            <xs:element name="importe" type="tipoImporte" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipoImporte">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d+,?\d{0,2}" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
