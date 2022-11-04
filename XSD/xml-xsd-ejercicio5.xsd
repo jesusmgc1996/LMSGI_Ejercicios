@@ -80,7 +80,7 @@
             <xs:element name="mensaje" type="tipoMensaje" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="mailPrimitivo" mixed="true">
+    <xs:complexType name="tipoMensaje">
         <xs:sequence>
             <xs:element name="asunto" type="xs:string" />
             <xs:element name="cuerpo" type="xs:string" />
@@ -88,7 +88,7 @@
     </xs:complexType>
     <xs:complexType name="tipoMail">
         <xs:complexContent>
-            <xs:extension base="mailPrimitivo">
+            <xs:extension base="tipoMensaje">
                 <xs:attribute name="de" type="tipoCorreo" />
             </xs:extension>
         </xs:complexContent>
@@ -98,11 +98,6 @@
             <xs:pattern value="\w+@\w+[.]\w{2,3}" />
         </xs:restriction>
     </xs:simpleType>
-    <xs:complexType name="tipoMensaje">
-        <xs:complexContent>
-            <xs:extension base="mailPrimitivo" />
-        </xs:complexContent>
-    </xs:complexType>
     <xs:simpleType name="tipoId">
         <xs:restriction base="xs:string">
             <xs:pattern value="\w+@gmail[.](com|es)" />
