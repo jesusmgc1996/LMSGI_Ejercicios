@@ -61,7 +61,7 @@
     </xs:complexType>
     <xs:simpleType name="direccionweb">
         <xs:restriction base="xs:string">
-            <xs:pattern value="https?://.+" />
+            <xs:pattern value="https?://.+[.]\w{2,3}" />
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="tipoMensajes">
