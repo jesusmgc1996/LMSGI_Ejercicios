@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<title>Cuestionario</title>
+	<link rel="icon" href="images/logo.jpeg">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="divPrincipal">
+		<div class="objetoCentrado">
+			<img src="images/banner.jpeg" />
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="informacion.html">Información</a></li>
+				<li><a href="mundos.html">Mundos</a></li>
+				<li><a href="formulario.html">Cuestionario</a></li>
+			</ul>
+		</div>
+		<div id="stylized" class="myform">
+			<h1>Nos gustaría saber sobre tí:</h1>
+			<form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+				<table>
+					<tr>
+						<td><label>Nombre:</label></td>
+						<td><input type="text" name="Nombre" id="Nombre" class="campoNormal" /></td>
+					</tr>
+					<tr>
+						<td><label for="Apellidos">Apellidos:</label></td>
+						<td><input type="text" name="Apellidos" id="Apellidos" class="campoNormal" /></td>
+					</tr>
+					<tr>
+						<td><label for="select">Edad</label></td>
+						<td>
+							<select name="select" id="select" class="campoNormal">
+								<option value="1">0-15</option>
+								<option value="2">16-30</option>
+								<option value="3">31-45</option>
+								<option value="4">46-60</option>
+								<option value="5">61-75</option>
+								<option value="6">76 o más</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="checkbox"><label>Sexo:</label></label></td>
+						<td>
+							<label><span class="small">Hombre</span></label>
+							<input type="radio" name="Sexo" value="1" id="Sexo_0" class="campoMenor" />
+							<label><span class="small">Mujer</span></label>
+							<input type="radio" name="Sexo" value="2" id="Sexo_1" class="campoMenor" />
+							<label><span class="small">Otro</span></label>
+							<input type="radio" name="Sexo" value="3" id="Sexo_2" class="campoMenor" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="checkbox">¿Eres estudiante?</label></td>
+						<td><input type="checkbox" name="checkbox" id="checkbox" class="campoMenor" /></td>
+					</tr>
+					<tr>
+						<td><label for="Descripcion">¿Por qué estás interesado en World of Warcraft?</label></td>
+						<td><textarea name="Descripcion" id="Descripcion" rows="5" class="campoNormal"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="select">¿Cuál es tu expansión favorita?</label></td>
+						<td>
+							<select name="select" id="select" class="campoNormal">
+								<option value="1">Classic</option>
+								<option value="2">The Burning Crusade</option>
+								<option value="3">Wrath of the Lich King</option>
+								<option value="4">Cataclysm</option>
+								<option value="5">Mists of Pandaria</option>
+								<option value="6">Warlords of Draenor</option>
+								<option value="7">Legion</option>
+								<option value="8">Battle for Azeroth</option>
+								<option value="9">Shadowlands</option>
+								<option value="10">Dragonflight</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="select">¿A qué facción te gustaría pertenecer?</label></td>
+						<td>
+							<select name="select" id="select" class="campoNormal">
+								<option value="1">Horda</option>
+								<option value="2">Alianza</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="Raza">¿Qué raza te gustaría ser?</label></label></td>
+						<td><input type="text" name="Raza" id="Raza" class="campoNormal" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="select">¿Qué clase te llama más la atención?</label></td>
+						<td><select name="select" id="select" class="campoNormal">
+								<option value="1">Guerrero</option>
+								<option value="2">Paladín</option>
+								<option value="3">Cazador</option>
+								<option value="4">Pícaro</option>
+								<option value="5">Chamán</option>
+								<option value="6">Druida</option>
+								<option value="7">Mago</option>
+								<option value="8">Sacerdote</option>
+								<option value="9">Brujo</option>
+								<option value="10">Caballero de la muerte</option>
+								<option value="11">Monje</option>
+								<option value="12">Cazador de demonios</option>
+								<option value="13">Evocador</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<input name="oculto" type="hidden" id="oculto" value="valorOculto" />
+				<input type="submit" name="Enviar" id="Enviar" value="Enviar" class="boton" />
+			</form>
+		</div>
+</body>
+
+</html>

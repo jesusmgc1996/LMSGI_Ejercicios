@@ -1,0 +1,132 @@
+body {
+    background: black;
+    font-family: 'Arial', sans-serif;
+}
+
+#divPrincipal {
+    vertical-align: top;
+}
+
+.objetoCentrado {
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    width: 100px;
+}
+
+#menu li:hover {
+    background: #757575;
+}
+
+#menu a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.texto {
+    margin-left: 250;
+    margin-right: 250;
+    text-align: justify;
+    color: white;
+}
+
+.titulo {
+    color: thistle;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.titulo li:hover {
+    background: #757575;
+}
+
+.titulo a {
+    color: thistle;
+    text-decoration: none;
+}
+
+#tablaPrincipal {
+    width: 100%;
+}
+
+.tablaSecundaria {
+    border: groove red;
+    width: 49%;
+    display: inline-block;
+}
+
+h1,
+form {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.myform {
+    margin: 0 auto;
+    width: 460px;
+    padding: 14px;
+}
+
+#stylized {
+    border: solid 2px #b7ddf2;
+    background: #ebf4fb;
+}
+
+#stylized h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#stylized label {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    float: left;
+}
+
+#stylized .small {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 140px;
+}
+
+.campoNormal {
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    width: 200px;
+    margin: 2px 0 20px 10px;
+}
+
+.campoMenor {
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    margin: 2px 150px 20px 7px;
+}
+
+.boton {
+    clear: both;
+    margin-left: 150px;
+    width: 125px;
+    height: 31px;
+    background: #666666 no-repeat;
+    text-align: center;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+}
