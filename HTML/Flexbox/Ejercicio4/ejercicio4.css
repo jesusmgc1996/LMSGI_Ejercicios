@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    border-style: solid;
+    border-color: red;
+}
+
+.flex-container > div {
+    color: white;
+    width: 10%;
+    font-size: 100;
+    text-align: center;
+  }
