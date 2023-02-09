@@ -1,0 +1,76 @@
+@import "color";
+$titleWeight: 500;
+
+@mixin background($color) {
+  background-color: $color;
+}
+
+@mixin bold($font-weight) {
+  font-weight: $font-weight;
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+@mixin title($color) {
+  @include bold($titleWeight);
+  @include color($color);
+  font-size: 30px;
+}
+
+@mixin colors($bColor, $tColor) {
+  @include background($bColor);
+  @include color($tColor);
+}
+
+body {
+  @include background($backgroundColor);
+}
+
+.title {
+  @include title($blackColor);
+}
+
+.cart {
+  @include title($grayColor);
+  span {
+    @include background($grayColor);
+  }
+}
+
+.item {
+  @include bold($titleWeight);
+}
+
+.second {
+  @include color($grayColor);
+}
+
+.promo {
+  @include color($promoColor);
+}
+
+.total {
+  @include bold(bold);
+}
+
+.btn-redeem {
+  @include colors($grayColor,$whiteColor);
+}
+
+.btn-redeem:hover {
+  @extend .btn-redeem;
+}
+
+.btn-continue {
+  @include colors($blueColor,$whiteColor);
+}
+
+.btn-continue:hover {
+  @extend .btn-continue;
+}
+
+.foot {
+  height: 12%;
+}

@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Checkout form</title>
+    <link rel="icon" href="bootstrap.svg">
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center p-5 mx-5">
+            <img src="bootstrap.svg" width="5%">
+            <h1 class="pt-4">Checkout form</h1>
+            <p class="second">Below is an example form built entirely with Bootstrap's form controls. Each
+                required
+                form group has a validation state that can be triggered by attempting to submit the form without
+                completing
+                it.</p>
+        </header>
+        <div class="row">
+            <div class="col-md order-md-2">
+                <div class="cart d-flex justify-content-between">
+                    Your cart<span class="badge rounded-pill mb-2">3</span>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="item">Product name</span><br><small class="second">Brief description</small>
+                        </div>
+                        <span class="second">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="item">Second product</span><br><small class="second">Brief description</small>
+                        </div>
+                        <span class="second">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="item">Third item</span><br><small class="second">Brief description</small>
+                        </div>
+                        <span class="second">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="promo">
+                            <span class="item">Promo code</span><br><small>EXAMPLECODE</small>
+                        </div>
+                        <span class="promo">-$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total (USD)<span class="total">$20</span>
+                    </li>
+                </ul>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button class="btn btn-redeem" type="submit">Redeem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <form action="/action_page.php">
+                    <div class="title">Billing addres</div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="py-2" for="text">First name</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                        <div class="col">
+                            <label class="py-2" for="text">Last name</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="pt-4 pb-2" for="text">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="Username" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="pt-4 pb-2" for="email">Email <span class="second">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" name="email">
+                    </div>
+                    <div>
+                        <label class="pt-4 pb-2" for="text">Address</label>
+                        <input type="text" class="form-control" id="text" placeholder="1234 Main St" name="text"
+                            required>
+                    </div>
+                    <div>
+                        <label class="pt-4 pb-3" for="text">Address 2 <span class="second">(Optional)</span></label>
+                        <input type="text" class="form-control" id="text" placeholder="Apartment or suite" name="text">
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col">
+                            <label class="pt-4 pb-2" for="text">Country</label>
+                            <select class="form-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="pt-4 pb-2" for="text">State</label>
+                            <select class="form-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="pt-4 pb-2" for="text">Zip</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check pt-2">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <div class="title py-2">Payment</div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                            checked>Credit card
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Debit
+                        card
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">Paypal
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="pt-4 pb-2" for="text">Name on card</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                            <small class="second">Full name as displayed on card</small>
+                        </div>
+                        <div class="col">
+                            <label class="pt-4 pb-2" for="text">Credit card number</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-3">
+                            <label class="pt-3 pb-2" for="text">Expiration</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                        <div class="col-3">
+                            <label class="pt-3 pb-2" for="text">CVV</label>
+                            <input type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="row p-2">
+                    <button class="btn btn-continue" type="submit">Continue to checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="row p-5">
+            <div class="text-center second">&copy; 2017-2018 Company Name</div>
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">Privacy</a>
+                <a href="#" class="text-decoration-none">Terms</a>
+                <a href="#" class="text-decoration-none">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

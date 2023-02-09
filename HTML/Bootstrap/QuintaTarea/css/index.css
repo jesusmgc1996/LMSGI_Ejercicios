@@ -1,0 +1,50 @@
+body {
+  background-color: whitesmoke;
+}
+
+.title {
+  font-weight: 500;
+  color: black;
+  font-size: 30px;
+}
+
+.cart {
+  font-weight: 500;
+  color: gray;
+  font-size: 30px;
+}
+.cart span {
+  background-color: gray;
+}
+
+.item {
+  font-weight: 500;
+}
+
+.second {
+  color: gray;
+}
+
+.promo {
+  color: green;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.btn-redeem, .btn-redeem:hover {
+  background-color: gray;
+  color: white;
+}
+
+.btn-continue, .btn-continue:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.foot {
+  height: 12%;
+}
+
+/*# sourceMappingURL=index.css.map */
