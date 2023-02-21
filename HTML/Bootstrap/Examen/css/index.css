@@ -1,0 +1,28 @@
+body {
+  background-color: whitesmoke !important;
+}
+
+header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cardTitle {
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.button, .button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
