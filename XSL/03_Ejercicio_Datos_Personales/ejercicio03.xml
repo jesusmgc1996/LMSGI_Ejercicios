@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ejercicio03.xsl"?>
+
+<alumno dni="111">
+  <nombre>Juan Garcia</nombre>
+  <direccion>
+    <calle>Avenida de la Fuente</calle>
+    <numero>6</numero>
+    <ciudad>Zafra</ciudad>
+    <provincia>Badajoz</provincia>
+  </direccion>
+  <telefono>924555555</telefono>
+</alumno>
